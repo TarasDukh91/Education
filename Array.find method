@@ -1,0 +1,8 @@
+Array.find method return a value of searching item
+
+const numberArr = [3, 6, 89, 12, 543, 65]
+
+const numResult = numberArr.find(function(num){
+  return num > 100
+});
+console.log(numResult)
