@@ -1,0 +1,9 @@
+Array.findIndex method returns an index of searching item
+
+const numberArr = [3, 6, 89, 12, 543, 65]
+
+const numResult = numberArr.findIndex(function(num){
+  return num > 100
+});
+console.log(numResult)
+
