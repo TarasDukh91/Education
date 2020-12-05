@@ -1,0 +1,23 @@
+Method reduce can concatinate the values of the array with each other
+
+const numberArr = [3, 6, 89, 12, 543, 65]
+
+function addValues(accumulator, currentNumber){
+  console.log(accumulator)
+  console.log(currentNumber)
+  return accumulator + currentNumber
+}
+const numberResult = numberArr.reduce(addValues)
+console.log(numberResult)
+
+Also we can find the largest value ia array
+
+const numberArr = [3, 6, 89, 12, 543, 65]
+function biggest (acc, arrVal){
+  if(arrVal > acc){
+    acc = arrVal
+  }
+  return acc
+}
+let biggestNum = numberArr.reduce(biggest)
+console.log(biggestNum)
