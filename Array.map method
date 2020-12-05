@@ -7,3 +7,11 @@ function count(num){
     }
 }
 arr.map(count)
+
+
+const arrNum = [23, 45, 67, 87, 90]
+function triple(x){
+    return x*3
+}
+let tripleNum = arrNum.map(triple);
+console.log(tripleNum);
