@@ -1,0 +1,16 @@
+
+FILTER ALL STRING THAT HAS MORE OR EVEN 5 LETTERS
+const names = ["Taras", "Roman", "Ivan", "Maria", "Halia"];
+function findName(name) {
+  return name.length >= 5;
+}
+let result = names.filter(findName);
+console.log(result);
+
+FILTER ALL NAMES THAT HAVE LETTER r
+const names = ["Taras", "Roman", "Ivan", "Maria", "Halia"];
+function findName(name) {
+  return name.includes("r")
+}
+let result = names.filter(findName);
+console.log(result);
