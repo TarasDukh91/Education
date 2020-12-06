@@ -1,0 +1,18 @@
+// Using an every method
+let sampleArray = [ 1, 2, 3 ];
+let isGreaterThanZero = number => number > 0;
+let allPositive = sampleArray.every( num => isGreaterThanZero(num));
+console.log(allPositive)
+
+//The same with a for loop
+let sampleArray = [ 1, 2, 3 ];
+// Create a function that will return all values that greater then 0
+let isGreaterThanZero = number => number > 0;
+// Creting the variable that will return true
+let allPositive = true;
+// Creating a for loop 
+for (let i=0; i < sampleArray.length; i++) {
+  allPositive = allPositive
+                       && isGreaterThanZero(sampleArray[i]);
+}
+console.log(allPositive)
