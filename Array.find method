@@ -6,3 +6,30 @@ const numResult = numberArr.find(function(num){
   return num > 100
 });
 console.log(numResult)
+
+
+//Creating a find method using for loop
+// Create an array of cities
+const cities = [
+    {name: 'Moscow', population: 12506468},
+    {name: 'Saint Petersburg', population: 5351935},
+    {name: 'Novosibirsk', population: 1612833},
+    {name: 'Kaliningrad', population: 482443},
+    {name: 'Kaluga', population: 336726}
+];
+// Create an empty array to pass the result of the loop
+let millionPlusCities = [];
+// Creting a for loop 
+for (var i = 0; i < cities.length; i++) {
+// Looking for the match 
+ if (cities[i].name === 'Kaluga') {
+    millionPlusCities.push(cities[i]);
+  }
+  // Notice that the loop returns only the first match
+  
+  //The same loop using a find method
+  let millionPlusCities = cities.find(function(e){
+    return e.name === "Moscow";
+})
+
+console.log(millionPlusCities);
