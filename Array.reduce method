@@ -21,3 +21,20 @@ function biggest (acc, arrVal){
 }
 let biggestNum = numberArr.reduce(biggest)
 console.log(biggestNum)
+//AND create reduce method using for loop
+
+// First we need to create an Array
+let val = [1, 5, 7, 8, 34]
+//Then we need to create a variable that we will use as the attribute to concatinate
+let sum = 0;
+// Then we creating a for Loop
+for(let i=0; i < val.length; i++){
+ summ += val[i]
+};
+console.log(sum)
+// And the same using reduce method
+let val = [1, 5, 7, 8, 34]
+let sum = val.reduce(function(acc, num){
+    return acc + num
+    })
+console.log(sum)
