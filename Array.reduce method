@@ -29,7 +29,7 @@ let val = [1, 5, 7, 8, 34]
 let sum = 0;
 // Then we creating a for Loop
 for(let i=0; i < val.length; i++){
- summ += val[i]
+ sum += val[i]
 };
 console.log(sum)
 // And the same using reduce method
