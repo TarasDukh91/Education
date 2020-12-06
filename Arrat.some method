@@ -1,0 +1,6 @@
+const numbers = [1, 2, 3, 4, 5, 9]
+
+let result = numbers.some(function(number){
+    return number > 10
+})
+console.log(result)
