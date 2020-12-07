@@ -37,3 +37,24 @@ console.log(productsIds);
 var productsIds = products.map(function(product) {
   return product.id;
 });
+
+
+//My map updated
+var products = [{
+  id: 0,
+  name: 'Product 1'
+},{
+  id: 1,
+  name: 'Product 2'
+}];
+function myMap(products, cb){
+  var productsIds = [];
+  for(var i = 0; i < products.length; i++) {
+  productsIds.push(products[i].id);
+}
+}
+console.log(productsIds);
+function cb(){
+  console.log(products[1])
+}
+cb();
