@@ -80,6 +80,7 @@ function filterCallback(cities){
 }
 filterCallback(cities)
 console.log(filterCallback(cities[1]))
+
 function myFilter(cities, filterCallback){
   const millionPlusCities = [];
 // Creating a for loop
@@ -92,5 +93,6 @@ return millionPlusCities;
 }
 
 const result = myFilter(cities, filterCallback)
+
 console.log(result)
 console.log(filterCallback.name[0])
