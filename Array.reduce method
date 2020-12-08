@@ -38,3 +38,21 @@ let sum = val.reduce(function(acc, num){
     return acc + num
     })
 console.log(sum)
+
+
+//Reduce DONE!!!
+let val = [1, 5, 7, 8, 34]
+function callBack(val) {
+    return val
+}
+//Then we need to create a variable that we will use as the attribute to concatinate
+let sum = 0;
+function reduce(val){
+for(let i=0; i < val.length; i++){
+ sum += val[i]
+};
+return sum
+}
+//console.log(sum)
+const result = reduce(val)
+console.log(result);
