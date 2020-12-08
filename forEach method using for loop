@@ -1,0 +1,8 @@
+var arr = [5, 7, 3, 56, 13,89, 65]
+
+function forEach1(arr){
+    for(var i = 0; i < arr.length; i++){
+        console.log(arr[i]);
+    }
+}
+forEach1(arr);
