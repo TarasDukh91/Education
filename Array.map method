@@ -50,11 +50,13 @@ var products = [{
 function myMap(products, cb){
   var productsIds = [];
   for(var i = 0; i < products.length; i++) {
-  productsIds.push(products[i].id);
+  productsIds.push(cb(products[i].id));
 }
+return productsIds
 }
-console.log(productsIds);
+
+let result = myMap(products, cb)
+
 function cb(){
-  console.log(products[1])
+  return produts.id
 }
-cb();
